@@ -1,0 +1,1177 @@
+{
+  "intents": [
+    {
+      "intent": "OrganizationPeople",
+      "examples": [
+        {
+          "text": "251-1,000 People"
+        },
+        {
+          "text": "5001+ People"
+        },
+        {
+          "text": "1,001-5,000 People"
+        },
+        {
+          "text": "1-10 People"
+        },
+        {
+          "text": "51-250 People"
+        },
+        {
+          "text": "11-50 People"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "NO",
+      "examples": [
+        {
+          "text": "NO"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "YES",
+      "examples": [
+        {
+          "text": "YES"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "IndividualIncome",
+      "examples": [
+        {
+          "text": "100,000-149,999"
+        },
+        {
+          "text": "150,000+"
+        },
+        {
+          "text": "80,000-99,999"
+        },
+        {
+          "text": "60,000-79,999"
+        },
+        {
+          "text": "40,000-59,999"
+        },
+        {
+          "text": "20,000-39,999"
+        },
+        {
+          "text": "Less than 20,000"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Industry",
+      "examples": [
+        {
+          "text": "Education"
+        },
+        {
+          "text": "Construction"
+        },
+        {
+          "text": "Energy"
+        },
+        {
+          "text": "Academic"
+        },
+        {
+          "text": "Research and development"
+        },
+        {
+          "text": "Media & telecommunications"
+        },
+        {
+          "text": "Marketing and sales"
+        },
+        {
+          "text": "Manufacturing"
+        },
+        {
+          "text": "Legal services"
+        },
+        {
+          "text": "Healthcare"
+        },
+        {
+          "text": "Food and beverage"
+        },
+        {
+          "text": "Financial services"
+        },
+        {
+          "text": "Automotive"
+        },
+        {
+          "text": "Non-profit"
+        },
+        {
+          "text": "Other Industory"
+        },
+        {
+          "text": "Social services"
+        },
+        {
+          "text": "Public sector (government)"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Answer",
+      "examples": [
+        {
+          "text": "6"
+        },
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "Somewhat Disagree"
+        },
+        {
+          "text": "Strongly Agree"
+        },
+        {
+          "text": "Disagree"
+        },
+        {
+          "text": "Agree"
+        },
+        {
+          "text": "Somewhat Agree"
+        },
+        {
+          "text": "Strongly Disagree"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Gender",
+      "examples": [
+        {
+          "text": "Other Gender"
+        },
+        {
+          "text": "Male"
+        },
+        {
+          "text": "Female"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "end",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "finish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "complete",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "close",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "final",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "return",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "end",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "What's up?",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "Hi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good moring",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Answer",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "2",
+          "synonyms": [
+            "Disagree",
+            "２"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1",
+          "synonyms": [
+            "Strongly Disagree",
+            "１"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6",
+          "synonyms": [
+            "Strongly Agree",
+            "６"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5",
+          "synonyms": [
+            "Agree",
+            "５"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4",
+          "synonyms": [
+            "Somewhat Agree",
+            "４"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3",
+          "synonyms": [
+            "Somewhat Disagree",
+            "３"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "AnqEnd",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your answer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1586125614742",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Welcome"
+      },
+      "conditions": "@end",
+      "dialog_node": "node_1_1586129895109",
+      "previous_sibling": "node_4_1586130248660"
+    },
+    {
+      "type": "standard",
+      "title": "Q10 context save",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1586125614742",
+      "context": {
+        "q10ans": "@Answer"
+      },
+      "conditions": "#Answer",
+      "dialog_node": "node_4_1586130248660"
+    },
+    {
+      "type": "standard",
+      "title": "greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? @greeting ?> ! Do you want to start a check of work at home ? , Please input YES or NO."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@greeting",
+      "dialog_node": "node_5_1587645481316"
+    },
+    {
+      "type": "standard",
+      "title": "Q6",
+      "output": {
+        "generic": [
+          {
+            "title": "6. I feel there is little communication with my colleagues.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 6,
+        "q5ans": "@Answer"
+      },
+      "conditions": "$qNo == 5 && #Answer",
+      "dialog_node": "node_6_1586125267990",
+      "previous_sibling": "node_4_1586125218640"
+    },
+    {
+      "type": "standard",
+      "title": "Q4",
+      "output": {
+        "generic": [
+          {
+            "title": "4. I spend more time watching TV and the Internet and playing video games.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 4,
+        "q3ans": "@Answer"
+      },
+      "conditions": "$qNo == 3 && #Answer",
+      "dialog_node": "node_3_1586125118189",
+      "previous_sibling": "node_2_1586125045235"
+    },
+    {
+      "type": "standard",
+      "title": "Q5",
+      "output": {
+        "generic": [
+          {
+            "title": "5. I have been working at home for a long time, and my posture is bad.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 5,
+        "q4ans": "@Answer"
+      },
+      "conditions": "$qNo == 4 && #Answer",
+      "dialog_node": "node_4_1586125218640",
+      "previous_sibling": "node_3_1586125118189"
+    },
+    {
+      "type": "standard",
+      "title": "Q3",
+      "output": {
+        "generic": [
+          {
+            "title": "3. I have become sleep deprived.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 3,
+        "q2ans": "@Answer"
+      },
+      "conditions": "$qNo == 2 && #Answer",
+      "dialog_node": "node_2_1586125045235",
+      "previous_sibling": "node_1_1586102395919"
+    },
+    {
+      "type": "standard",
+      "title": "SurveyEnd",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$qNo == 10",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1586125614742",
+      "previous_sibling": "node_9_1586125437042"
+    },
+    {
+      "type": "standard",
+      "title": "Q8",
+      "output": {
+        "generic": [
+          {
+            "title": "8. I am not working efficiently.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 8,
+        "q7ans": "@Answer"
+      },
+      "conditions": "$qNo == 7 && #Answer",
+      "dialog_node": "node_5_1586125261573",
+      "previous_sibling": "node_7_1586125274667"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you want to start a check of work at home ? , Please input YES or NO."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 0
+      },
+      "conditions": "anything_else || #NO",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1586125614742"
+    },
+    {
+      "type": "standard",
+      "title": "Q7",
+      "output": {
+        "generic": [
+          {
+            "title": "7. I want to commute to work as before.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 7,
+        "q6ans": "@Answer"
+      },
+      "conditions": "$qNo == 6 && #Answer",
+      "dialog_node": "node_7_1586125274667",
+      "previous_sibling": "node_6_1586125267990"
+    },
+    {
+      "type": "standard",
+      "title": "Q2",
+      "output": {
+        "generic": [
+          {
+            "title": "2. My eating habits have become irregular.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 2,
+        "q1ans": "@Answer"
+      },
+      "conditions": "$qNo == 1 && #Answer",
+      "dialog_node": "node_1_1586102395919",
+      "previous_sibling": "node_8_1586100434361"
+    },
+    {
+      "type": "standard",
+      "title": "Q9",
+      "output": {
+        "generic": [
+          {
+            "title": "9. My relationship with my family is getting worse.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 9,
+        "q8ans": "@Answer"
+      },
+      "conditions": "$qNo == 8 && #Answer",
+      "dialog_node": "node_8_1586125432190",
+      "previous_sibling": "node_5_1586125261573"
+    },
+    {
+      "type": "standard",
+      "title": "Q10",
+      "output": {
+        "generic": [
+          {
+            "title": "10. I am worried about COVID-19 infection.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 10,
+        "q9ans": "@Answer"
+      },
+      "conditions": "$qNo == 9 && #Answer",
+      "dialog_node": "node_9_1586125437042",
+      "previous_sibling": "node_8_1586125432190"
+    },
+    {
+      "type": "standard",
+      "title": "Q1",
+      "output": {
+        "generic": [
+          {
+            "title": "1. I lack exercise.",
+            "options": [
+              {
+                "label": "1",
+                "value": {
+                  "input": {
+                    "text": "1"
+                  }
+                }
+              },
+              {
+                "label": "2",
+                "value": {
+                  "input": {
+                    "text": "2"
+                  }
+                }
+              },
+              {
+                "label": "3",
+                "value": {
+                  "input": {
+                    "text": "3"
+                  }
+                }
+              },
+              {
+                "label": "4",
+                "value": {
+                  "input": {
+                    "text": "4"
+                  }
+                }
+              },
+              {
+                "label": "5",
+                "value": {
+                  "input": {
+                    "text": "5"
+                  }
+                }
+              },
+              {
+                "label": "6",
+                "value": {
+                  "input": {
+                    "text": "6"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 1
+      },
+      "conditions": "#YES && $qNo == 0",
+      "dialog_node": "node_8_1586100434361",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "title": "WORK HEALTH SURVEY",
+            "options": [
+              {
+                "label": "YES",
+                "value": {
+                  "input": {
+                    "text": "YES"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "No"
+                  }
+                }
+              }
+            ],
+            "description": "Do you answer this survey?",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {
+        "qNo": 0,
+        "q1ans": null,
+        "q2ans": null,
+        "q3ans": null,
+        "q4ans": null,
+        "q5ans": null,
+        "q6ans": null,
+        "q7ans": null,
+        "q8ans": null,
+        "q9ans": null,
+        "q10ans": null
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Call for Code 2020 April24v1",
+  "language": "en",
+  "description": ""
+}
