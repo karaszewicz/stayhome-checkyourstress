@@ -1,0 +1,436 @@
+[
+    {
+        "id": "799eb70e.6a2c68",
+        "type": "tab",
+        "label": "portal site dev version",
+        "disabled": false,
+        "info": "repository: https://github.com/kolinz/stayhome-checkyourstress"
+    },
+    {
+        "id": "b51f5f48.c5479",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Stay Home, Check Your Stress.",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4a9611a9.18eb5",
+        "type": "ui_group",
+        "z": "",
+        "name": "Supporters Information Maps",
+        "tab": "b51f5f48.c5479",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "71fd68dd.6ca4a8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED ダッシュボード",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "YYYY/MM/DD",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6383f87c.4f8ce8",
+        "type": "ui_group",
+        "z": "",
+        "name": "LINE Bot",
+        "tab": "b51f5f48.c5479",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8e09cf45.46183",
+        "type": "function",
+        "z": "799eb70e.6a2c68",
+        "name": "switch layer, move map and zoom",
+        "func": "msg.payload = { command:{layer:\"OSM\",lat:36,lon:140,zoom:3} };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "e8a901be.c5747"
+            ]
+        ]
+    },
+    {
+        "id": "bedf2692.d16b38",
+        "type": "function",
+        "z": "799eb70e.6a2c68",
+        "name": "sample-data",
+        "func": "msg.payload = 'created,updated,latitude,longitude,org,url,Country,State,city,address line,phone,type,supportstatus\\n2020-04-07T00:13:33.870Z,2020-04-07T01:53:52.136Z,35.67631,139.78754,Stress-check Tokyo,https://node-red-vrvrc.mybluemix.net/ui/,JPN,Tokyo,chuo-ku,hakozaki,03-0000-0000,telework,yes\\n2020-04-06T23:45:01.895Z,2020-04-07T01:33:29.737Z,35.097895,136.89257,Stress-check Nagoya,https://node-red-vrvrc.mybluemix.net/ui/,JPN,Aichi,Nakamura-ku,naeki,052-000-0000,healthcare,yes\\n2020-04-06T23:17:23.170Z,2020-04-07T01:45:33.452Z,34.631769,135.399084,Stress-check Osaka,https://node-red-vrvrc.mybluemix.net/ui/,JPN,Osaka,kita-ku,nakanoshima,06-0000-0000,diet support,no';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "d973c5d3.70f4b8",
+                "ce3d5d90.64dec"
+            ]
+        ]
+    },
+    {
+        "id": "d973c5d3.70f4b8",
+        "type": "csv",
+        "z": "799eb70e.6a2c68",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "e57d3187.ed807"
+            ]
+        ]
+    },
+    {
+        "id": "ee8dd112.53759",
+        "type": "function",
+        "z": "799eb70e.6a2c68",
+        "name": "mapping",
+        "func": "msg.payload.lat = msg.payload.latitude;\nmsg.payload.lon = msg.payload.longitude;\nmsg.payload.weblink = msg.payload.url\nmsg.payload.name = msg.payload.org;\nmsg.payload.icon = \"globe\";\nmsg.payload.iconColor = msg.payload.color;\n\n\t\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1160,
+        "y": 420,
+        "wires": [
+            [
+                "e8a901be.c5747"
+            ]
+        ]
+    },
+    {
+        "id": "e8a901be.c5747",
+        "type": "worldmap",
+        "z": "799eb70e.6a2c68",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM grey",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "path": "/worldmap",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ce3d5d90.64dec",
+        "type": "debug",
+        "z": "799eb70e.6a2c68",
+        "name": "debug : sample-data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e57d3187.ed807",
+        "type": "switch",
+        "z": "799eb70e.6a2c68",
+        "name": "work ato home : support status",
+        "property": "payload.supportstatus",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "yes",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "no",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 690,
+        "y": 420,
+        "wires": [
+            [
+                "460cccdb.535dd4"
+            ],
+            [
+                "557283ec.b0ebac"
+            ]
+        ]
+    },
+    {
+        "id": "460cccdb.535dd4",
+        "type": "change",
+        "z": "799eb70e.6a2c68",
+        "name": "set color : green",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.color",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "ee8dd112.53759"
+            ]
+        ]
+    },
+    {
+        "id": "557283ec.b0ebac",
+        "type": "change",
+        "z": "799eb70e.6a2c68",
+        "name": "set color : red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.color",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 460,
+        "wires": [
+            [
+                "ee8dd112.53759"
+            ]
+        ]
+    },
+    {
+        "id": "d9d4eb95.7b8528",
+        "type": "worldmap in",
+        "z": "799eb70e.6a2c68",
+        "name": "",
+        "path": "/worldmap",
+        "events": "all",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "b51b7673.c59558"
+            ]
+        ]
+    },
+    {
+        "id": "b51b7673.c59558",
+        "type": "function",
+        "z": "799eb70e.6a2c68",
+        "name": "status check",
+        "func": "if (msg.payload.action === \"connected\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "8e09cf45.46183",
+                "bedf2692.d16b38"
+            ]
+        ]
+    },
+    {
+        "id": "f9455b2b.1c9ba8",
+        "type": "ui_template",
+        "z": "799eb70e.6a2c68",
+        "group": "4a9611a9.18eb5",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"border:1px solid gray; text-align:center; width:100%;\">\n        <p>This map shows companies and organizations that support work at home.</p>\n</div>\n<iframe src=\"https://node-red-vrvrc.mybluemix.net/worldmap\" width=\"100%\" height=\"500\"></iframe>\n<a href=\"https://node-red-vrvrc.mybluemix.net/worldmap\" target=\"_blank\">Click View Larger Map</a>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "345b2e9a.d99672",
+        "type": "comment",
+        "z": "799eb70e.6a2c68",
+        "name": "Map App UI",
+        "info": "",
+        "x": 110,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5a2f561e.371d18",
+        "type": "comment",
+        "z": "799eb70e.6a2c68",
+        "name": "Map App",
+        "info": "",
+        "x": 100,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "1c0abb9b.60d7a4",
+        "type": "ui_template",
+        "z": "799eb70e.6a2c68",
+        "group": "6383f87c.4f8ce8",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "8",
+        "format": "<div style=\"border:1px solid gray; text-align:center; width:100%; height=600\" >\n    <div style=\"border:1px solid gray; text-align:center; width:100%;\">\n        <p>Please scan to the QR Code below.This bot requires LINE App for iPhone or Android.</p>\n        <p>First, Please input greeting in the LINE Bot. For example , Hello , Good morning and other.</p>\n    </div>\n    <img src=\"https://cloud-object-storage-dsx-cos-standard-callforcode2020.s3.jp-tok.cloud-object-storage.appdomain.cloud/321isorj.png\" alt=\"LINE Bot QR Code\" width=\"90%\">\n</div>\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "901be428.bb6ff8",
+        "type": "comment",
+        "z": "799eb70e.6a2c68",
+        "name": "Bot List UI",
+        "info": "",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    }
+]
