@@ -22,6 +22,14 @@ The End user interface have Portal Site and Chatbot. This Chatbot start by scann
 ## Chatbot
 ![line-bot](https://github.com/kolinz/stayhome-checkyourstress/blob/master/docs/line-chatbot.png)
 
+### Chatbot 
+| Support App | staus | link |
+|:---|:---|:---|
+|LINE | confirmed | https://line.me/en/download |
+|Slack | loadmap |  |
+|Mattermost | loadmap |  |
+
+### overview
 The application asks the user 10 questions.Questions include exercise, diet, sleep, life rhythm, work efficiency, family and anxiety about infection.
 
 You answer from "Strongly Agree" to "Strongly Disagree" with a number from 1 to 6.With just this, you'll know your stress situation and get some advice on how to reduce your stress.
