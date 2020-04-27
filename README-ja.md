@@ -3,6 +3,11 @@
 - ソリューション紹介 https://youtu.be/UXoX6_Whm_U
 - Apache License 2.0
 
+## 開発メンバー
+- [@kolinz](https://twitter.com/kolinz)
+- [@mihoicchi](https://twitter.com/mihoicchi)
+- [@miki_hiroshi_77](https://twitter.com/miki_hiroshi_77)
+
 # 実装手順書
 - こちらの[wiki](https://github.com/kolinz/stayhome-checkyourstress/wiki/Deployment)をご確認ください。
 
