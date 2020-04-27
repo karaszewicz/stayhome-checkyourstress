@@ -36,8 +36,8 @@ The End user interface have Portal Site and Chatbot. This Chatbot start by scann
 | Support App | staus | link |
 |:---|:---|:---|
 |LINE | confirmed | https://line.me/en/download |
-|Slack | loadmap |  |
-|Mattermost | loadmap |  |
+|Slack | Roadmap |  |
+|Mattermost | Roadmap |  |
 
 ### overview
 The application asks the user 10 questions.Questions include exercise, diet, sleep, life rhythm, work efficiency, family and anxiety about infection.
