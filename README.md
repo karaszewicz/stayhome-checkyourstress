@@ -1,3 +1,5 @@
+日本語版のReadmeは[こちらから](https://github.com/kolinz/stayhome-checkyourstress/blob/master/README-ja.md)
+
 # Stay Home, Check Your Stress
 - Call for Code Challenge 2020
 - Promotion Video https://youtu.be/UXoX6_Whm_U
